@@ -1,0 +1,36 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environment directories
+venv/
+env/
+.venv/
+.env/
+
+# Ignore Django migration files
+*/migrations/
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore local environment variables
+.env
+
+# Ignore static and media files
+static/
+media/
+
+# Ignore build directories
+build/
+dist/
+
+# Ignore temporary files
+*.tmp
+*.swp
+
+# Ignore Docker files
+Dockerfile
+docker-compose.yml
