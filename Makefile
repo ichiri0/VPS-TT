@@ -8,6 +8,9 @@ install:
 migrate:
 	$(PYTHON) $(MANAGE) migrate
 
+generate:
+	$(PYTHON) $(MANAGE) makemigrations
+
 runserver:
 	$(PYTHON) $(MANAGE) runserver
 
@@ -32,4 +35,10 @@ lint:
 format:
 	black .
 
+docker:
+	docker-compose up --build -d
+
+docker-test:
+	docker-compose up --build
+	
 .PHONY: install migrate runserver createsuperuser collectstatic test freeze shell lint format
