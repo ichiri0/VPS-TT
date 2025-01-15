@@ -1,0 +1,4 @@
+[flake8]
+ignore = E501, W503
+max-line-length = 88
+exclude = migrations, env, venv, .git, __pycache__, .venv, .vscode, .github, .pytest_cache, .mypy_cache, .tox
